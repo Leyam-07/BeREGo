@@ -1,0 +1,59 @@
+/* BeReGo/css/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Example Font */
+
+:root {
+  --primary-color: #0d6efd; /* Bootstrap primary blue */
+  --secondary-color: #6c757d; /* Bootstrap secondary gray */
+  --light-color: #f8f9fa; /* Bootstrap light gray */
+  --dark-color: #212529; /* Bootstrap dark gray */
+  --body-font: 'Roboto', sans-serif;
+  --base-font-size: 1rem; /* 16px default */
+}
+
+html {
+  font-size: 100%; /* Corresponds to 16px by default */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--base-font-size);
+  line-height: 1.6;
+  color: var(--dark-color);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+main {
+  flex-grow: 1; /* Ensure main content pushes footer down */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Basic Accessibility */
+*:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}

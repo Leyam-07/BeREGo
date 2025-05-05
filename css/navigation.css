@@ -1,0 +1,94 @@
+/* BeReGo/css/navigation.css */
+
+/* Header Styles */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem 0;
+  }
+  
+  .site-header .navbar-brand img {
+    max-height: 40px; /* Adjust logo size */
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: var(--dark-color);
+    font-weight: 500;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover,
+  .site-header .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+  }
+  
+  .site-header .navbar-toggler {
+    border: none;
+  }
+  
+  .site-header .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .header-actions a {
+      color: var(--dark-color);
+      font-size: 1.2rem;
+      margin-left: 1rem;
+  }
+  
+  .header-actions a:hover {
+      color: var(--primary-color);
+      text-decoration: none;
+  }
+  
+  /* Footer Styles */
+  .site-footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 2.5rem 0;
+    margin-top: auto; /* Pushes footer to bottom */
+  }
+  
+  .site-footer h5 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .site-footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .site-footer ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+  
+  .site-footer ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: var(--secondary-color);
+  }
+  
+  .social-icons a {
+      color: var(--light-color);
+      font-size: 1.3rem;
+      margin-right: 0.8rem;
+      transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+      color: var(--primary-color);
+      text-decoration: none;
+  }

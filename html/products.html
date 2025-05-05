@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - BeReGo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS (All linked - Assuming these are correct paths) -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- Header (Assuming Final Structure Applied - No changes here as per instruction) -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Main Navigation Links (Final) -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Active class applied as this is products.html -->
+                            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Final Category List -->
+                                <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
+                                <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
+                                <li><a class="dropdown-item" href="audio.html">Audio</a></li>
+                                <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                                <li><a class="dropdown-item" href="smart-home.html">Smart Home</a></li>
+                                <li><a class="dropdown-item" href="wearables.html">Wearables</a></li>
+                                <li><a class="dropdown-item" href="cameras.html">Cameras</a></li>
+                                <li><a class="dropdown-item" href="computers.html">Computers</a></li>
+                                <li><a class="dropdown-item" href="gaming.html">Gaming</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Form -->
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+
+                    <!-- Header Action Icons (Final Links) -->
+                    <div class="header-actions d-flex align-items-center">
+                        <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="nav-link" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="container">
+            <h1 class="mb-4">All Products</h1>
+
+            <div class="row">
+                <!-- Filters Sidebar (UPDATED with ALL categories) -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="accordion" id="filterAccordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="true" aria-controls="collapseFilters">
+                              Filters
+                            </button>
+                          </h2>
+                          <div id="collapseFilters" class="accordion-collapse collapse show" data-bs-parent="#filterAccordion">
+                            <div class="accordion-body">
+                                <!-- Filter Group 1: Category (Final List - UPDATED) -->
+                                <h5>Category</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catSmartphones">
+                                    <label class="form-check-label" for="catSmartphones">Smartphones</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catLaptops">
+                                    <label class="form-check-label" for="catLaptops">Laptops</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catAudio">
+                                    <label class="form-check-label" for="catAudio">Audio</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catAccessories">
+                                    <label class="form-check-label" for="catAccessories">Accessories</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catSmartHome">
+                                    <label class="form-check-label" for="catSmartHome">Smart Home</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catWearables">
+                                    <label class="form-check-label" for="catWearables">Wearables</label>
+                                </div>
+                                <!-- Added Phase 4 Categories -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catCameras">
+                                    <label class="form-check-label" for="catCameras">Cameras</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catComputers">
+                                    <label class="form-check-label" for="catComputers">Computers</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="catGaming">
+                                    <label class="form-check-label" for="catGaming">Gaming</label>
+                                </div>
+                                <!-- End Added Categories -->
+                                <hr>
+                                <!-- Filter Group 2: Brand -->
+                                <h5>Brand</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandMyPhone">
+                                    <label class="form-check-label" for="brandMyPhone">MyPhone</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandCherry">
+                                    <label class="form-check-label" for="brandCherry">Cherry Mobile</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandStarmobile">
+                                    <label class="form-check-label" for="brandStarmobile">Starmobile</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandCDRKing">
+                                    <label class="form-check-label" for="brandCDRKing">CD-R King</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandXiaomi">
+                                    <label class="form-check-label" for="brandXiaomi">Xiaomi</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandOppo">
+                                    <label class="form-check-label" for="brandOppo">Oppo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brandRakk">
+                                    <label class="form-check-label" for="brandRakk">Rakk</label> <!-- Example gaming brand -->
+                                </div>
+                                <!-- Add more relevant brands -->
+                                <hr>
+                                <!-- Filter Group 3: Price Range -->
+                                <h5>Price Range</h5>
+                                <label for="priceRange" class="form-label">Max Price: <span id="priceValue">₱20000</span></label>
+                                <input type="range" class="form-range" min="100" max="50000" step="100" id="priceRange" value="20000" oninput="document.getElementById('priceValue').textContent = '₱' + this.value;">
+                                <div class="d-grid mt-3">
+                                     <button class="btn btn-primary btn-sm">Apply Filters</button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Product Grid (UPDATED with more diverse examples) -->
+                <div class="col-lg-9">
+                    <!-- Sorting Dropdown -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted small">Showing 1-9 of 50+ results</span> <!-- Example count -->
+                        <select class="form-select form-select-sm w-auto" aria-label="Sort products">
+                            <option selected>Sort by: Featured</option>
+                            <option value="1">Price: Low to High</option>
+                            <option value="2">Price: High to Low</option>
+                            <option value="3">Newest Arrivals</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Product Cards Row (UPDATED) -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                        <!-- Smartphone -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/0d6efd/white?text=Phone+A" class="card-img-top" alt="Product A">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">MyPhone Model A</h5>
+                                    <p class="card-text small text-muted">Feature-rich phone</p>
+                                    <p class="card-text fw-bold mt-auto">₱7,499</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Laptop -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/198754/white?text=Laptop+B" class="card-img-top" alt="Product B">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cherry Mobile Laptop B</h5>
+                                    <p class="card-text small text-muted">Work and play ready</p>
+                                    <p class="card-text fw-bold mt-auto">₱21,000</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Audio -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/ffc107/black?text=Speaker+C" class="card-img-top" alt="Product C">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Starmobile Speaker C</h5>
+                                    <p class="card-text small text-muted">Portable Bluetooth Speaker</p>
+                                    <p class="card-text fw-bold mt-auto">₱999</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accessory -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/dc3545/white?text=Mouse+D" class="card-img-top" alt="Product D">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">CD-R King Mouse D</h5>
+                                    <p class="card-text small text-muted">Ergonomic Wireless Mouse</p>
+                                    <p class="card-text fw-bold mt-auto">₱350</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wearable -->
+                         <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/6f42c1/white?text=Watch+E" class="card-img-top" alt="Product E">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Xiaomi Smart Band E</h5>
+                                    <p class="card-text small text-muted">Fitness Tracker</p>
+                                    <p class="card-text fw-bold mt-auto">₱1,990</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Smart Home -->
+                         <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/fd7e14/white?text=Plug+F" class="card-img-top" alt="Product F">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cherry Home Smart Plug F</h5>
+                                    <p class="card-text small text-muted">WiFi Control Outlet</p>
+                                    <p class="card-text fw-bold mt-auto">₱680</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Camera (NEW) -->
+                         <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/20c997/black?text=Cam+G" class="card-img-top" alt="Product G">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">BrandX Action Cam G</h5>
+                                    <p class="card-text small text-muted">4K Waterproof Action Camera</p>
+                                    <p class="card-text fw-bold mt-auto">₱4,500</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Computer (NEW) -->
+                         <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/6610f2/white?text=Monitor+H" class="card-img-top" alt="Product H">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">ViewPlus Monitor H</h5>
+                                    <p class="card-text small text-muted">27-inch IPS 75Hz</p>
+                                    <p class="card-text fw-bold mt-auto">₱8,200</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gaming (NEW) -->
+                         <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/d63384/white?text=Keyboard+I" class="card-img-top" alt="Product I">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Rakk Gaming Keyboard I</h5>
+                                    <p class="card-text small text-muted">Mechanical RGB Keyboard</p>
+                                    <p class="card-text fw-bold mt-auto">₱2,150</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- End Product Row -->
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mt-5 d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div> <!-- End Product Grid Column -->
+            </div> <!-- End Row -->
+        </div>
+    </main>
+
+    <!-- Footer (Assuming Final Structure Applied - No changes here as per instruction) -->
+    <footer class="site-footer">
+        <div class="container">
+             <div class="row">
+                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                     <h5>BeReGo</h5>
+                     <p class="text-muted small">Your gateway to Southeast Asian electronics. Quality products, trusted service.</p>
+                 </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Account</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="user-account.html">My Account</a></li>
+                        <li><a href="user-account.html#v-pills-orders">Order History</a></li>
+                        <li><a href="#">Track Order</a></li> <!-- Placeholder -->
+                        <li><a href="user-account.html#v-pills-wishlist">Wishlist</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-3 col-md-6">
+                    <h5>Connect</h5>
+                     <ul class="list-unstyled mb-2">
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

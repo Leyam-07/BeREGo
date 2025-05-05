@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops - BeReGo</title> <!-- Changed Title -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/forms.css"> {/* Added forms.css link */}
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- Header (Updated based on snippets) -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Main Navigation Links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="products.html">Products</a> <!-- Keep Products active -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
+                                <li><a class="dropdown-item active" href="laptops.html">Laptops</a></li> {/* Active class added */}
+                                <li><a class="dropdown-item" href="audio.html">Audio</a></li>
+                                <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                                <li><a class="dropdown-item" href="smart-home.html">Smart Home</a></li>
+                                <li><a class="dropdown-item" href="wearables.html">Wearables</a></li>
+                                <li><a class="dropdown-item" href="cameras.html">Cameras</a></li>
+                                <li><a class="dropdown-item" href="computers.html">Computers</a></li>
+                                <li><a class="dropdown-item" href="gaming.html">Gaming</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Form -->
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search laptops..." aria-label="Search"> <!-- Updated placeholder -->
+                        <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+
+                    <!-- Header Action Icons -->
+                    <div class="header-actions d-flex align-items-center">
+                        <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a> {/* Updated href */}
+                        <a href="cart.html" class="nav-link" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a> {/* Updated href */}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="container">
+             <!-- Breadcrumbs (Verified links) -->
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Laptops</li>
+              </ol>
+            </nav>
+
+            <h1 class="mb-4">Laptops</h1> <!-- Updated H1 -->
+
+            <div class="row">
+                <!-- Filters Sidebar (Content remains specific to laptops) -->
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="accordion" id="filterAccordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="true" aria-controls="collapseFilters">
+                              Filters
+                            </button>
+                          </h2>
+                          <div id="collapseFilters" class="accordion-collapse collapse show" data-bs-parent="#filterAccordion">
+                            <div class="accordion-body">
+                                <!-- Filter Group 1: Category -->
+                                <h5>Category</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="cat1" checked disabled>
+                                    <label class="form-check-label fw-bold" for="cat1">Laptops</label>
+                                </div>
+                                <hr>
+                                <!-- Filter Group 2: Brand -->
+                                <h5>Brand</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand1">
+                                    <label class="form-check-label" for="brand1">Cherry Mobile</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand2">
+                                    <label class="form-check-label" for="brand2">Starmobile</label>
+                                </div>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand3">
+                                    <label class="form-check-label" for="brand3">Xiaomi</label>
+                                </div>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand4">
+                                    <label class="form-check-label" for="brand4">Asus</label>
+                                </div>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand5">
+                                    <label class="form-check-label" for="brand5">Acer</label>
+                                </div>
+                                <hr>
+                                <!-- Filter Group 3: Price Range -->
+                                <h5>Price Range</h5>
+                                <label for="priceRange" class="form-label">Max Price: <span id="priceValue">₱35000</span></label>
+                                <input type="range" class="form-range" min="15000" max="80000" step="1000" id="priceRange" value="35000" oninput="document.getElementById('priceValue').textContent = '₱' + this.value;">
+                                <hr>
+                                 <h5>Screen Size</h5>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="size1">
+                                    <label class="form-check-label" for="size1">13 inch</label>
+                                </div>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="size2">
+                                    <label class="form-check-label" for="size2">14 inch</label>
+                                </div>
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="size3">
+                                    <label class="form-check-label" for="size3">15 inch</label>
+                                </div>
+                                <div class="d-grid mt-3">
+                                     <button class="btn btn-primary btn-sm">Apply Filters</button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Product Grid (Updated for Laptops) -->
+                <div class="col-lg-9">
+                    <!-- Sorting Dropdown -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted small">Showing 1-6 of 15 results</span> <!-- Example count -->
+                        <select class="form-select form-select-sm w-auto" aria-label="Sort products">
+                            <option selected>Sort by: Featured</option>
+                            <option value="1">Price: Low to High</option>
+                            <option value="2">Price: High to Low</option>
+                            <option value="3">Newest Arrivals</option>
+                        </select>
+                    </div>
+
+                    <!-- Product Cards Row (Laptop Examples - Verified links) -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                        <!-- Laptop Product Card 1 -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/198754/white?text=Cherry+Alpha" class="card-img-top" alt="Cherry Mobile AlphaBook">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cherry Mobile AlphaBook</h5>
+                                    <p class="card-text small text-muted">14.1" HD, Intel Celeron, 4GB RAM</p>
+                                    <p class="card-text fw-bold mt-auto">₱17,999</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Laptop Product Card 2 -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/6f42c1/white?text=Starmobile+Aura" class="card-img-top" alt="Starmobile Engage Aura">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Starmobile Engage Aura</h5>
+                                    <p class="card-text small text-muted">Thin & Light, 13.3" FHD, 128GB SSD</p>
+                                    <p class="card-text fw-bold mt-auto">₱21,500</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Laptop Product Card 3 -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/fd7e14/white?text=Xiaomi+Book" class="card-img-top" alt="Xiaomi Mi Book Air">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Xiaomi Mi Book Air 13</h5>
+                                    <p class="card-text small text-muted">Intel Core i5, 8GB RAM, 256GB SSD</p>
+                                    <p class="card-text fw-bold mt-auto">₱38,990</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Laptop Product Card 4 -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/0dcaf0/black?text=Asus+Vivo" class="card-img-top" alt="Asus VivoBook">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Asus VivoBook 15</h5>
+                                    <p class="card-text small text-muted">15.6" NanoEdge Display, Ryzen 5</p>
+                                    <p class="card-text fw-bold mt-auto">₱34,995</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Laptop Product Card 5 -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/20c997/white?text=Acer+Aspire" class="card-img-top" alt="Acer Aspire 3">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Acer Aspire 3 Slim</h5>
+                                    <p class="card-text small text-muted">AMD Athlon, 4GB RAM, Windows 11</p>
+                                    <p class="card-text fw-bold mt-auto">₱22,499</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Laptop Product Card 6 -->
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="https://placehold.co/300x200/198754/white?text=Cherry+Pro" class="card-img-top" alt="Cherry Mobile AlphaBook Pro">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cherry Mobile AlphaBook Pro</h5>
+                                    <p class="card-text small text-muted">Upgraded Specs, 8GB RAM, 256GB SSD</p>
+                                    <p class="card-text fw-bold mt-auto">₱24,999</p>
+                                    <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- End Product Row -->
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mt-5 d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div> <!-- End Product Grid Column -->
+            </div> <!-- End Row -->
+        </div>
+    </main>
+
+    <!-- Footer (Updated based on snippets) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>BeReGo</h5>
+                    <p class="text-muted small">Your gateway to Southeast Asian electronics. Quality products, trusted service.</p>
+                </div>
+                <!-- Quick Links Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- Account Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Account</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="user-account.html">My Account</a></li>
+                        <li><a href="user-account.html#v-pills-orders">Order History</a></li> {/* Updated href */}
+                        <li><a href="#">Track Order</a></li> {/* Placeholder */}
+                        <li><a href="user-account.html#v-pills-wishlist">Wishlist</a></li> {/* Updated href */}
+                    </ul>
+                </div>
+                 <!-- Connect/Legal Column -->
+                 <div class="col-lg-3 col-md-6">
+                    <h5>Connect</h5>
+                     <ul class="list-unstyled mb-2">
+                        <li><a href="terms.html">Terms & Conditions</a></li> {/* Updated href */}
+                        <li><a href="privacy.html">Privacy Policy</a></li> {/* Updated href */}
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

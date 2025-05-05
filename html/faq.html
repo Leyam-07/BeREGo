@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - BeReGo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo" style="max-height: 40px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Main Navigation Links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
+                                <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
+                                <li><a class="dropdown-item" href="audio.html">Audio</a></li>
+                                <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                                <li><a class="dropdown-item" href="smart-home.html">Smart Home</a></li>
+                                <li><a class="dropdown-item" href="wearables.html">Wearables</a></li>
+                                <li><a class="dropdown-item" href="cameras.html">Cameras</a></li>
+                                <li><a class="dropdown-item" href="computers.html">Computers</a></li>
+                                <li><a class="dropdown-item" href="gaming.html">Gaming</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <!-- Search Form -->
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <!-- Header Action Icons -->
+                    <div class="header-actions d-flex align-items-center">
+                        <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="nav-link" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+         <!-- Page Header -->
+        <section class="page-header text-center bg-light py-5">
+            <div class="container">
+                <i class="fas fa-question-circle fa-3x text-primary mb-3"></i>
+                <h1>Frequently Asked Questions</h1>
+                <p class="lead">Find answers to common questions about shopping with BeReGo.</p>
+            </div>
+        </section>
+
+        <section class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+
+                        <!-- Ordering Section -->
+                        <div class="faq-section mb-5">
+                            <h2><i class="fas fa-shopping-cart fa-fw"></i>Ordering</h2>
+                            <div class="accordion" id="faqOrdering">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q1-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1-collapse" aria-expanded="false" aria-controls="q1-collapse">
+                                            How do I place an order?
+                                        </button>
+                                    </h3>
+                                    <div id="q1-collapse" class="accordion-collapse collapse" aria-labelledby="q1-heading" data-bs-parent="#faqOrdering">
+                                        <div class="accordion-body">
+                                            Placing an order is easy! Browse our products via the <a href="products.html" class="text-decoration-underline">Products</a> page or specific category links. Add desired items to your <a href="cart.html" class="text-decoration-underline">Shopping Cart</a>, then click "Proceed to Checkout". Follow the on-screen instructions for shipping and payment details. You'll receive a confirmation email once your order is submitted (Note: This is a demo site, no real orders are processed).
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q2-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2-collapse" aria-expanded="false" aria-controls="q2-collapse">
+                                            Can I change or cancel my order after placing it?
+                                        </button>
+                                    </h3>
+                                    <div id="q2-collapse" class="accordion-collapse collapse" aria-labelledby="q2-heading" data-bs-parent="#faqOrdering">
+                                        <div class="accordion-body">
+                                            On a live website, the ability to modify or cancel depends on how quickly you contact us and the order's processing stage. We recommend contacting our <a href="contact.html" class="text-decoration-underline">Customer Support</a> immediately with your order number for assistance. For this demonstration, orders are not actually processed.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q-payment-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-payment-collapse" aria-expanded="false" aria-controls="q-payment-collapse">
+                                            What payment methods do you accept?
+                                        </button>
+                                    </h3>
+                                    <div id="q-payment-collapse" class="accordion-collapse collapse" aria-labelledby="q-payment-heading" data-bs-parent="#faqOrdering">
+                                        <div class="accordion-body">
+                                            Our checkout page shows placeholder options like Credit Card, Debit Card, PayPal/GCash, and Cash on Delivery (COD). On a real store, accepted methods would be clearly listed and functional.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Section -->
+                        <div class="faq-section mb-5">
+                             <h2><i class="fas fa-truck-fast fa-fw"></i>Shipping & Delivery</h2>
+                             <div class="accordion" id="faqShipping">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q3-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3-collapse" aria-expanded="false" aria-controls="q3-collapse">
+                                            Where do you ship?
+                                        </button>
+                                    </h3>
+                                    <div id="q3-collapse" class="accordion-collapse collapse" aria-labelledby="q3-heading" data-bs-parent="#faqShipping">
+                                        <div class="accordion-body">
+                                            We currently ship to addresses within the Philippines. Shipping costs are calculated during checkout based on your delivery location and order details. Standard rates are typically around ₱150 for Metro Manila and ₱200 for provincial areas, but may vary.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q4-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4-collapse" aria-expanded="false" aria-controls="q4-collapse">
+                                            How long will it take to receive my order?
+                                        </button>
+                                    </h3>
+                                    <div id="q4-collapse" class="accordion-collapse collapse" aria-labelledby="q4-heading" data-bs-parent="#faqShipping">
+                                        <div class="accordion-body">
+                                            Estimated delivery times are:
+                                            <ul>
+                                                <li>Metro Manila: 3-5 business days</li>
+                                                <li>Provincial Areas: 5-10 business days</li>
+                                            </ul>
+                                            Express options may be available at checkout. Please note these are estimates and delays can occasionally occur due to courier factors or high volume periods.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q-tracking-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-tracking-collapse" aria-expanded="false" aria-controls="q-tracking-collapse">
+                                            How can I track my order?
+                                        </button>
+                                    </h3>
+                                    <div id="q-tracking-collapse" class="accordion-collapse collapse" aria-labelledby="q-tracking-heading" data-bs-parent="#faqShipping">
+                                        <div class="accordion-body">
+                                            Once your order ships, you would typically receive a shipping confirmation email containing a tracking number and a link to the courier's website. You could also track orders via the 'Order History' section in your <a href="user-account.html" class="text-decoration-underline">My Account</a> page (tracking links are placeholders in this demo).
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Returns & Warranty Section -->
+                        <div class="faq-section mb-5">
+                             <h2><i class="fas fa-undo-alt fa-fw"></i>Returns & Warranty</h2>
+                             <div class="accordion" id="faqReturns">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q5-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5-collapse" aria-expanded="false" aria-controls="q5-collapse">
+                                            What is your return policy?
+                                        </button>
+                                    </h3>
+                                    <div id="q5-collapse" class="accordion-collapse collapse" aria-labelledby="q5-heading" data-bs-parent="#faqReturns">
+                                        <div class="accordion-body">
+                                            We generally offer a 7-day return window for items that are defective upon arrival or significantly different from what was described. Items must typically be in original packaging with all accessories. For complete details, please review our <a href='terms.html' class="text-decoration-underline">Terms and Conditions</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q6-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6-collapse" aria-expanded="false" aria-controls="q6-collapse">
+                                            Do products come with a warranty?
+                                        </button>
+                                    </h3>
+                                    <div id="q6-collapse" class="accordion-collapse collapse" aria-labelledby="q6-heading" data-bs-parent="#faqReturns">
+                                        <div class="accordion-body">
+                                            Yes, most electronic products sold on BeReGo come with a manufacturer's warranty. The duration and coverage specifics vary by brand and product type (e.g., smartphones often have 1 year, accessories might have less). Warranty information is usually found on the product detail page or the manufacturer's documentation included with the item.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q-return-process-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-return-process-collapse" aria-expanded="false" aria-controls="q-return-process-collapse">
+                                            How do I initiate a return or warranty claim?
+                                        </button>
+                                    </h3>
+                                    <div id="q-return-process-collapse" class="accordion-collapse collapse" aria-labelledby="q-return-process-heading" data-bs-parent="#faqReturns">
+                                        <div class="accordion-body">
+                                            To initiate a return or warranty claim, please <a href="contact.html" class="text-decoration-underline">Contact Us</a> with your order number, product details, and a description of the issue. Our support team will guide you through the necessary steps.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Product Specific Section -->
+                        <div class="faq-section mb-5">
+                             <h2><i class="fas fa-memory fa-fw"></i>Product Specifics</h2>
+                             <div class="accordion" id="faqProducts">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q-camera-warranty-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-camera-warranty-collapse" aria-expanded="false" aria-controls="q-camera-warranty-collapse">
+                                            What kind of warranty applies to cameras?
+                                        </button>
+                                    </h3>
+                                    <div id="q-camera-warranty-collapse" class="accordion-collapse collapse" aria-labelledby="q-camera-warranty-heading" data-bs-parent="#faqProducts">
+                                        <div class="accordion-body">
+                                            Camera warranties typically cover manufacturing defects for a period specified by the brand (often 1 year). Accidental damage (drops, water) is usually not covered. Please check the specific product page for details.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q-computer-specs-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-computer-specs-collapse" aria-expanded="false" aria-controls="q-computer-specs-collapse">
+                                            Are computer specifications accurate? Can I customize?
+                                        </button>
+                                    </h3>
+                                    <div id="q-computer-specs-collapse" class="accordion-collapse collapse" aria-labelledby="q-computer-specs-heading" data-bs-parent="#faqProducts">
+                                        <div class="accordion-body">
+                                            We strive for accurate specification listings based on manufacturer information. For pre-built systems, customization options are generally limited unless explicitly stated. If you have specific needs, feel free to <a href="contact.html" class="text-decoration-underline">contact us</a> to inquire about potential options or custom builds (if offered).
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q-gaming-compat-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-gaming-compat-collapse" aria-expanded="false" aria-controls="q-gaming-compat-collapse">
+                                            How do I know if gaming accessories are compatible?
+                                        </button>
+                                    </h3>
+                                    <div id="q-gaming-compat-collapse" class="accordion-collapse collapse" aria-labelledby="q-gaming-compat-heading" data-bs-parent="#faqProducts">
+                                        <div class="accordion-body">
+                                            Compatibility information (e.g., PC, PS5, Xbox, Switch) is usually listed in the product description or specifications. Pay attention to connection types (USB, Bluetooth, specific console ports). If unsure, check the manufacturer's website or contact us.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Account Section -->
+                        <div class="faq-section mb-5">
+                             <h2><i class="fas fa-user-circle fa-fw"></i>My Account</h2>
+                             <div class="accordion" id="faqAccount">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q7-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7-collapse" aria-expanded="false" aria-controls="q7-collapse">
+                                            Do I need an account to place an order?
+                                        </button>
+                                    </h3>
+                                    <div id="q7-collapse" class="accordion-collapse collapse" aria-labelledby="q7-heading" data-bs-parent="#faqAccount">
+                                        <div class="accordion-body">
+                                            While guest checkout might be offered on a live site, creating a free account provides benefits like faster checkout in the future, easy order tracking, managing saved addresses, and creating wishlists. You can manage your details in the <a href='user-account.html' class="text-decoration-underline">My Account</a> section.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="accordion-item">
+                                    <h3 class="accordion-header" id="q8-heading">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q8-collapse" aria-expanded="false" aria-controls="q8-collapse">
+                                            I forgot my password. How do I reset it?
+                                        </button>
+                                    </h3>
+                                    <div id="q8-collapse" class="accordion-collapse collapse" aria-labelledby="q8-heading" data-bs-parent="#faqAccount">
+                                        <div class="accordion-body">
+                                            On a functional login page, there would be a "Forgot Password?" link. Clicking this would typically prompt you for your email address, and you'd receive instructions on how to create a new password. (Password reset functionality is not implemented in this demo).
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="text-center mt-5 p-4 border rounded bg-light">
+                            <h5 class="mb-3">Still have questions?</h5>
+                            <p class="mb-3">If you couldn't find the answer you were looking for, our support team is ready to help.</p>
+                            <a href="contact.html" class="btn btn-primary"><i class="fas fa-headset me-2"></i>Contact Customer Support</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+             <div class="row">
+                <!-- Footer Column 1 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>BeReGo</h5>
+                    <p class="text-muted small">Your gateway to Southeast Asian electronics. Quality products, trusted service.</p>
+                </div>
+                <!-- Quick Links Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html" class="active">FAQ</a></li> <!-- Active class added -->
+                    </ul>
+                </div>
+                <!-- Account Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Account</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="user-account.html">My Account</a></li>
+                        <li><a href="user-account.html#v-pills-orders">Order History</a></li>
+                        <li><a href="#">Track Order</a></li> <!-- Placeholder -->
+                        <li><a href="user-account.html#v-pills-wishlist">Wishlist</a></li>
+                    </ul>
+                </div>
+                <!-- Connect/Legal Column -->
+                 <div class="col-lg-3 col-md-6">
+                    <h5>Connect</h5>
+                     <ul class="list-unstyled mb-2">
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">© <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

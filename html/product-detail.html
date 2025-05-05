@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPhone Model X - BeReGo</title> <!-- Specific Title -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- Header -->
+     <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Main Navigation Links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Added 'active' class as this is a product page, falling under 'Products' -->
+                            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+                        </li>
+                         <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                          </a>
+                          <ul class="dropdown-menu">
+                            <!-- Added 'active' class to the relevant category (Smartphones) -->
+                            <li><a class="dropdown-item active" href="smartphones.html">Smartphones</a></li>
+                            <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
+                            <li><a class="dropdown-item" href="audio.html">Audio</a></li>
+                            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                            <li><a class="dropdown-item" href="smart-home.html">Smart Home</a></li>
+                            <li><a class="dropdown-item" href="wearables.html">Wearables</a></li>
+                            <li><a class="dropdown-item" href="cameras.html">Cameras</a></li>
+                            <li><a class="dropdown-item" href="computers.html">Computers</a></li>
+                            <li><a class="dropdown-item" href="gaming.html">Gaming</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Search Form -->
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <!-- Header Action Icons -->
+                    <div class="header-actions d-flex align-items-center">
+                        <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="nav-link" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="container">
+            <!-- Breadcrumbs - UPDATED -->
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                <!-- UPDATED: Link to the correct category page -->
+                <li class="breadcrumb-item"><a href="smartphones.html">Smartphones</a></li>
+                <li class="breadcrumb-item active" aria-current="page">MyPhone Model X</li> <!-- Example Product Name -->
+              </ol>
+            </nav>
+
+            <!-- Product Details Row -->
+            <div class="row g-5">
+                <!-- Product Image Gallery -->
+                <div class="col-md-6">
+                    <img src="https://placehold.co/600x400/0d6efd/white?text=MyPhone+X+Main" alt="MyPhone Model X" class="img-fluid rounded mb-3 main-product-image">
+                    <!-- Thumbnails (Optional) -->
+                    <div class="row g-2">
+                        <div class="col-3">
+                            <img src="https://placehold.co/150x100/adb5bd/white?text=Thumb+1" alt="Thumbnail 1" class="img-fluid rounded border cursor-pointer">
+                        </div>
+                         <div class="col-3">
+                            <img src="https://placehold.co/150x100/adb5bd/white?text=Thumb+2" alt="Thumbnail 2" class="img-fluid rounded border cursor-pointer">
+                        </div>
+                         <div class="col-3">
+                            <img src="https://placehold.co/150x100/adb5bd/white?text=Thumb+3" alt="Thumbnail 3" class="img-fluid rounded border cursor-pointer">
+                        </div>
+                         <div class="col-3">
+                            <img src="https://placehold.co/150x100/adb5bd/white?text=Thumb+4" alt="Thumbnail 4" class="img-fluid rounded border cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information & Actions -->
+                <div class="col-md-6">
+                    <h1 class="product-title">MyPhone Model X</h1> <!-- Example Product Name -->
+                    <!-- UPDATED: Optional: Link brand to a filtered product search -->
+                    <p class="text-muted">Brand: <a href="products.html?brand=MyPhone">MyPhone</a></p> <!-- Example link to filtered search -->
+                    <div class="product-rating mb-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                        <span class="ms-1 text-muted">(15 Reviews)</span>
+                    </div>
+                    <p class="product-price display-6 mb-3">₱5,999</p> <!-- Example Price -->
+                    <p class="product-description">
+                        This is a placeholder description for the MyPhone Model X. It highlights key features like its camera, battery life, and sleek design, perfect for everyday use in the Philippines. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                    <!-- Options -->
+                    <div class="mb-3">
+                        <label for="colorOption" class="form-label">Color:</label>
+                        <select class="form-select w-auto" id="colorOption">
+                            <option selected>Black</option>
+                            <option value="1">Blue</option>
+                            <option value="2">White</option>
+                        </select>
+                    </div>
+
+                     <!-- Quantity Selector -->
+                     <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity:</label>
+                        <input type="number" id="quantity" class="form-control w-auto" value="1" min="1" max="10">
+                     </div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-grid gap-2 d-sm-flex">
+                        <button type="button" class="btn btn-primary btn-lg flex-grow-1"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg"><i class="far fa-heart me-2"></i>Add to Wishlist</button>
+                    </div>
+
+                    <!-- Availability / Stock Status -->
+                    <p class="text-success mt-3"><i class="fas fa-check-circle me-1"></i> In Stock</p>
+
+                </div>
+            </div> <!-- End Product Details Row -->
+
+            <!-- Product Tabs: Description, Specs, Reviews -->
+            <section class="product-tabs mt-5">
+                 <ul class="nav nav-tabs" id="productTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs-tab-pane" type="button" role="tab" aria-controls="specs-tab-pane" aria-selected="false">Specifications</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">Reviews (15)</button>
+                  </li>
+                </ul>
+                <div class="tab-content pt-4" id="productTabContent">
+                  <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+                    <h4>Detailed Description</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.</p>
+                  </div>
+                  <div class="tab-pane fade" id="specs-tab-pane" role="tabpanel" aria-labelledby="specs-tab" tabindex="0">
+                    <h4>Technical Specifications</h4>
+                    <table class="table table-striped table-sm">
+                      <tbody>
+                        <tr><th scope="row" style="width: 30%;">Display</th><td>6.5" HD+ IPS Display</td></tr>
+                        <tr><th scope="row">Processor</th><td>Octa-Core 1.8GHz</td></tr>
+                        <tr><th scope="row">RAM</th><td>4GB</td></tr>
+                        <tr><th scope="row">Storage</th><td>64GB (Expandable via microSD)</td></tr>
+                         <tr><th scope="row">Rear Camera</th><td>13MP + 2MP</td></tr>
+                         <tr><th scope="row">Front Camera</th><td>8MP</td></tr>
+                         <tr><th scope="row">Battery</th><td>5000mAh</td></tr>
+                         <tr><th scope="row">OS</th><td>Android 12 (Go Edition)</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+                    <h4>Customer Reviews</h4>
+                    <div class="review mb-3 border-bottom pb-3">
+                        <div class="d-flex justify-content-between"><strong>Juan Dela Cruz</strong><span class="text-muted small">2 days ago</span></div>
+                         <div class="product-rating my-1"><i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="far fa-star text-warning"></i></div>
+                        <p>Good value for money. Camera is decent for the price. Battery lasts long.</p>
+                    </div>
+                     <div class="review mb-3 border-bottom pb-3">
+                        <div class="d-flex justify-content-between"><strong>Maria Santos</strong><span class="text-muted small">1 week ago</span></div>
+                         <div class="product-rating my-1"><i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i></div>
+                        <p>Excellent phone! Very happy with my purchase from BeReGo.</p>
+                    </div>
+                    <button class="btn btn-outline-primary mt-3">Write a Review</button>
+                  </div>
+                </div>
+            </section>
+
+             <!-- Related Products - UPDATED -->
+            <section class="related-products mt-5">
+                <h2 class="text-center mb-4">You Might Also Like</h2>
+                <div class="row g-4">
+                    <!-- Related Product Card 1 (Accessory) -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="https://placehold.co/300x200/dc3545/white?text=Case+Z" class="card-img-top" alt="Phone Case Z">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">MyPhone Case Z</h5>
+                                <p class="card-text small text-muted">Protective Case for Model X</p>
+                                <p class="card-text fw-bold mt-auto">₱350</p>
+                                <!-- UPDATED: Ensure link points to product detail -->
+                                <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Related Product Card 2 (Audio) -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="https://placehold.co/300x200/ffc107/black?text=Earbuds+Z" class="card-img-top" alt="Starmobile Earbuds Z">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Starmobile Earbuds Z</h5>
+                                <p class="card-text small text-muted">True Wireless Sound</p>
+                                <p class="card-text fw-bold mt-auto">₱1,299</p>
+                                <!-- UPDATED: Ensure link points to product detail -->
+                                <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Related Product Card 3 (Wearable) -->
+                     <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="https://placehold.co/300x200/6f42c1/white?text=Watch+E" class="card-img-top" alt="Xiaomi Smart Band E">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Xiaomi Smart Band E</h5>
+                                <p class="card-text small text-muted">Fitness Tracker</p>
+                                <p class="card-text fw-bold mt-auto">₱1,990</p>
+                                <!-- UPDATED: Ensure link points to product detail -->
+                                <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Related Product Card 4 (Accessory) -->
+                     <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card h-100 product-card">
+                            <img src="https://placehold.co/300x200/adb5bd/white?text=Powerbank" class="card-img-top" alt="CD-R King Powerbank">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">CD-R King Powerbank</h5>
+                                <p class="card-text small text-muted">10000mAh Capacity</p>
+                                <p class="card-text fw-bold mt-auto">₱780</p>
+                                <!-- UPDATED: Ensure link points to product detail -->
+                                <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+             <div class="row">
+                 <!-- Quick Links Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>BeReGo</h5>
+                    <p class="text-muted small">Your gateway to Southeast Asian electronics. Quality products, trusted service.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- Account Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Account</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="user-account.html">My Account</a></li>
+                        <!-- UPDATED: Link to specific tab in user account -->
+                        <li><a href="user-account.html#v-pills-orders">Order History</a></li>
+                        <li><a href="#">Track Order</a></li> <!-- Placeholder -->
+                         <!-- UPDATED: Link to specific tab in user account -->
+                        <li><a href="user-account.html#v-pills-wishlist">Wishlist</a></li>
+                    </ul>
+                </div>
+                <!-- Connect/Legal Column -->
+                 <div class="col-lg-3 col-md-6">
+                    <h5>Connect</h5>
+                     <ul class="list-unstyled mb-2">
+                        <!-- UPDATED: Links to legal pages -->
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+        /* Specific styles for cart page */
+        .cart-item-img {
+            max-width: 80px;
+            height: auto;
+            margin-right: 1rem;
+        }
+        .quantity-input {
+            max-width: 70px;
+        }
+        .cart-summary {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 0.375rem; /* Bootstrap default */
+            border: 1px solid #dee2e6;
+        }
+        @media (max-width: 767.98px) {
+            .cart-table thead {
+                display: none; /* Hide table header on small screens */
+            }
+            .cart-table tbody tr {
+                display: block;
+                margin-bottom: 1.5rem;
+                border-bottom: 2px solid var(--primary-color);
+                padding-bottom: 1rem;
+            }
+            .cart-table tbody td {
+                display: block;
+                text-align: right;
+                position: relative;
+                padding-left: 50%; /* Make space for label */
+                border: none;
+            }
+            .cart-table tbody td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0.5rem;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+            .cart-table .product-col {
+                 text-align: left; /* Align product info left */
+                 padding-left: 0;
+            }
+             .cart-table .product-col::before {
+                 display: none; /* No label for product column */
+             }
+             .cart-table .action-col {
+                 text-align: center; /* Center remove button */
+                 padding-left: 0;
+             }
+             .cart-table .action-col::before {
+                 display: none; /* No label for action column */
+             }
+        }

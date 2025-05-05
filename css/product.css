@@ -1,0 +1,54 @@
+/* BeReGo/css/product.css */
+
+/* Basic Card Styling */
+.product-card {
+    border: 1px solid #dee2e6;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .product-card .card-text.fw-bold { /* Price */
+    color: var(--primary-color);
+    font-size: 1.1rem;
+  }
+  
+  /* Category Card Styling */
+  .category-card {
+      display: block;
+      text-decoration: none;
+      color: var(--dark-color);
+      transition: transform 0.2s ease-in-out;
+  }
+  .category-card:hover {
+      transform: translateY(-5px);
+      color: var(--primary-color);
+  }
+  .category-card img {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .category-card h5 {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+  }
+  
+  /* Product Detail Page Specifics */
+  .main-product-image {
+      border: 1px solid #dee2e6;
+  }
+  .product-tabs .nav-link {
+      color: var(--secondary-color);
+  }
+  .product-tabs .nav-link.active {
+      color: var(--primary-color);
+      border-color: #dee2e6 #dee2e6 var(--primary-color);
+      font-weight: 500;
+  }

@@ -1,0 +1,8 @@
+/* BeReGo/css/forms.css */
+
+/* Add custom form styles here if needed beyond Bootstrap defaults */
+/* Example: Enhance focus states */
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Bootstrap's primary focus color */
+  }

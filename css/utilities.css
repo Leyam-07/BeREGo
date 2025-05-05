@@ -1,0 +1,42 @@
+/* BeReGo/css/utilities.css */
+
+/* Custom Text Colors (Examples - Use Bootstrap classes first) */
+.text-primary-emphasis {
+    color: var(--primary-color); /* Example if Bootstrap's isn't enough */
+}
+
+/* Custom Background Colors (Examples) */
+.bg-primary-subtle {
+    background-color: #cfe2ff; /* Bootstrap's subtle primary */
+}
+.bg-secondary-subtle {
+    background-color: #e2e3e5; /* Bootstrap's subtle secondary */
+}
+
+/* Custom Spacing (Examples if Bootstrap's m/p 0-5 isn't sufficient) */
+.mt-6 { margin-top: 4rem !important; }
+.mb-6 { margin-bottom: 4rem !important; }
+.pt-6 { padding-top: 4rem !important; }
+.pb-6 { padding-bottom: 4rem !important; }
+.py-6 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+.px-6 { padding-left: 4rem !important; padding-right: 4rem !important; }
+
+
+/* Border Radius Utilities */
+.rounded-lg {
+    border-radius: 0.5rem !important; /* Slightly larger than default */
+}
+
+/* Box Shadow Utilities */
+.shadow-sm { box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important; }
+.shadow { box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important; }
+.shadow-lg { box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; }
+
+/* Add other general utility classes as needed */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Flexbox Grow/Shrink (Examples) */
+.flex-grow-0 { flex-grow: 0 !important; }
+.flex-shrink-0 { flex-shrink: 0 !important; }
