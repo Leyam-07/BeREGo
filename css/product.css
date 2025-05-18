@@ -1,6 +1,3 @@
-/* BeReGo/css/product.css */
-
-/* Basic Card Styling */
 .product-card {
     border: 1px solid #dee2e6;
     transition: box-shadow 0.3s ease-in-out;
@@ -15,12 +12,11 @@
     font-weight: 500;
   }
   
-  .product-card .card-text.fw-bold { /* Price */
+  .product-card .card-text.fw-bold {
     color: var(--primary-color);
     font-size: 1.1rem;
   }
   
-  /* Category Card Styling */
   .category-card {
       display: block;
       text-decoration: none;
@@ -40,7 +36,6 @@
       font-weight: 500;
   }
   
-  /* Product Detail Page Specifics */
   .main-product-image {
       border: 1px solid #dee2e6;
   }

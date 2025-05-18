@@ -4,41 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computers & Monitors - BeReGo</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <!-- Phase 3+ CSS -->
     <link rel="stylesheet" href="../css/utilities.css">
     <link rel="stylesheet" href="../css/animations.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header class="site-header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo">
+                    <img src="../assets/logo.png" alt="BeReGo Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Main Navigation Links -->
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="products.html">Products</a> <!-- Active because it's a product/category page -->
+                            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,7 +46,7 @@
                                 <li><a class="dropdown-item" href="smart-home.html">Smart Home</a></li>
                                 <li><a class="dropdown-item" href="wearables.html">Wearables</a></li>
                                 <li><a class="dropdown-item" href="cameras.html">Cameras</a></li>
-                                <li><a class="dropdown-item active" href="computers.html">Computers</a></li> <!-- Active category -->
+                                <li><a class="dropdown-item active" href="computers.html">Computers</a></li>
                                 <li><a class="dropdown-item" href="gaming.html">Gaming</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="products.html">All Products</a></li>
@@ -66,13 +60,11 @@
                         </li>
                     </ul>
 
-                    <!-- Search Form -->
                     <form class="d-flex me-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search computers..." aria-label="Search"> <!-- Updated placeholder -->
+                        <input class="form-control me-2" type="search" placeholder="Search computers..." aria-label="Search">
                         <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
                     </form>
 
-                    <!-- Header Action Icons -->
                     <div class="header-actions d-flex align-items-center">
                         <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a>
                         <a href="cart.html" class="nav-link" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
@@ -82,10 +74,8 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="main-container">
         <div class="container">
-             <!-- Breadcrumbs -->
             <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -97,7 +87,6 @@
             <h1 class="mb-4">Computers & Monitors</h1>
 
             <div class="row">
-                <!-- Filters Sidebar -->
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <div class="accordion" id="filterAccordion">
                         <div class="accordion-item">
@@ -108,13 +97,11 @@
                           </h2>
                           <div id="collapseFilters" class="accordion-collapse collapse show" data-bs-parent="#filterAccordion">
                             <div class="accordion-body">
-                                <!-- Filter Group 1: Category -->
                                 <h5>Category</h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="catComputers" checked disabled> <!-- Checked and disabled -->
+                                    <input class="form-check-input" type="checkbox" value="" id="catComputers" checked disabled>
                                     <label class="form-check-label fw-bold" for="catComputers">Computers</label>
                                 </div>
-                                <!-- Add sub-categories if needed -->
                                 <div class="ms-3 mt-1">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="subcatDesktop">
@@ -130,28 +117,24 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <!-- Filter Group 2: Brand -->
                                 <h5>Brand</h5>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="brandComp1">
-                                    <label class="form-check-label" for="brandComp1">Brand PC</label> <!-- Placeholder -->
+                                    <label class="form-check-label" for="brandComp1">Brand PC</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="brandComp2">
-                                    <label class="form-check-label" for="brandComp2">ViewPlus</label> <!-- Example -->
+                                    <label class="form-check-label" for="brandComp2">ViewPlus</label>
                                 </div>
                                  <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="brandComp3">
-                                    <label class="form-check-label" for="brandComp3">Nvision</label> <!-- Example -->
+                                    <label class="form-check-label" for="brandComp3">Nvision</label>
                                 </div>
-                                <!-- Add more brands -->
                                 <hr>
-                                <!-- Filter Group 3: Price Range -->
                                 <h5>Price Range</h5>
                                 <label for="priceRange" class="form-label">Max Price: <span id="priceValue">₱30000</span></label>
                                 <input type="range" class="form-range" min="5000" max="80000" step="1000" id="priceRange" value="30000" oninput="document.getElementById('priceValue').textContent = '₱' + this.value;">
                                 <hr>
-                                <!-- Add more filters like Screen Size, Processor etc. -->
                                 <div class="d-grid mt-3">
                                      <button class="btn btn-primary btn-sm">Apply Filters</button>
                                 </div>
@@ -161,11 +144,9 @@
                       </div>
                 </div>
 
-                <!-- Product Grid -->
                 <div class="col-lg-9">
-                    <!-- Sorting Dropdown -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-muted small">Showing 1-6 of 15 results</span> <!-- Example count -->
+                        <span class="text-muted small">Showing 1-6 of 15 results</span>
                         <select class="form-select form-select-sm w-auto" aria-label="Sort products">
                             <option selected>Sort by: Featured</option>
                             <option value="1">Price: Low to High</option>
@@ -174,12 +155,10 @@
                         </select>
                     </div>
 
-                    <!-- Product Cards Row -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                        <!-- Computer Product Card 1 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/6610f2/white?text=Desktop+PC" class="card-img-top" alt="Desktop PC">
+                                <img src="../assets/ryzen 5.jpg" class="card-img-top" alt="Desktop PC">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Brand PC Ryzen 5 Set</h5>
                                     <p class="card-text small text-muted">Ryzen 5, 16GB RAM, 512GB SSD</p>
@@ -188,10 +167,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Computer Product Card 2 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/0dcaf0/black?text=Monitor+24" class="card-img-top" alt="Monitor 24 inch">
+                                <img src="../assets/view plus.jpeg" class="card-img-top" alt="Monitor 24 inch">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">ViewPlus 24" IPS Monitor</h5>
                                     <p class="card-text small text-muted">Full HD, 75Hz Refresh Rate</p>
@@ -200,10 +178,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Computer Product Card 3 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/d63384/white?text=AIO+PC" class="card-img-top" alt="All-in-One PC">
+                                <img src="../assets/AIO 24.png" class="card-img-top" alt="All-in-One PC">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">BrandAIO 24-inch PC</h5>
                                     <p class="card-text small text-muted">Intel Core i3, 8GB RAM, Integrated</p>
@@ -212,10 +189,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Computer Product Card 4 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/198754/white?text=Monitor+27" class="card-img-top" alt="Monitor 27 inch">
+                                <img src="../assets/nvision curved monitor.jpeg" class="card-img-top" alt="Monitor 27 inch">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Nvision 27" Curved Monitor</h5>
                                     <p class="card-text small text-muted">165Hz Gaming Ready, VA Panel</p>
@@ -224,10 +200,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Computer Product Card 5 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/ffc107/black?text=Intel+PC+Set" class="card-img-top" alt="Intel PC Set">
+                                <img src="../assets/intel i5.jpg" class="card-img-top" alt="Intel PC Set">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Value Intel i5 PC Set</h5>
                                     <p class="card-text small text-muted">Core i5, 8GB RAM, 256GB SSD + 1TB HDD</p>
@@ -236,10 +211,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Computer Product Card 6 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/fd7e14/white?text=Office+Monitor" class="card-img-top" alt="Office Monitor">
+                                <img src="../assets/basic office monitor.jpg" class="card-img-top" alt="Office Monitor">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Basic Office Monitor 22"</h5>
                                     <p class="card-text small text-muted">1080p, HDMI/VGA Ports</p>
@@ -249,25 +223,22 @@
                             </div>
                         </div>
 
-                    </div> <!-- End Product Row -->
+                    </div>
 
-                    <!-- Pagination -->
                     <nav aria-label="Page navigation" class="mt-5 d-flex justify-content-center">
                         <ul class="pagination">
                             <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
                             <li class="page-item"><a class="page-link" href="#">Next</a></li>
                         </ul>
                     </nav>
 
-                </div> <!-- End Product Grid Column -->
-            </div> <!-- End Row -->
+                </div>
+            </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -290,7 +261,7 @@
                      <ul class="list-unstyled">
                         <li><a href="user-account.html">My Account</a></li>
                         <li><a href="user-account.html#v-pills-orders">Order History</a></li>
-                        <li><a href="#">Track Order</a></li> <!-- Placeholder -->
+                        <li><a href="#">Track Order</a></li>
                         <li><a href="user-account.html#v-pills-wishlist">Wishlist</a></li>
                     </ul>
                 </div>
@@ -309,12 +280,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                © <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.
+                © <span id="current-year"></span> BeReGo. All Rights Reserved.
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>

@@ -1,35 +1,25 @@
-/* BeReGo/css/responsive.css */
-
-/* Tablet */
 @media (min-width: 576px) {
-    /* Add tablet-specific styles here */
     .site-header .navbar-brand img {
         max-height: 45px;
     }
   }
   
-  /* Small Desktop */
   @media (min-width: 768px) {
-      /* Add small desktop-specific styles here */
       .site-footer {
-          text-align: left; /* Align footer text left on larger screens */
+          text-align: left;
       }
       .footer-bottom {
-          text-align: center; /* Keep copyright centered */
+          text-align: center;
       }
   }
   
   
-  /* Desktop */
   @media (min-width: 992px) {
-    /* Add desktop-specific styles here */
      .site-header .navbar-nav .nav-link {
         padding-left: 1rem;
         padding-right: 1rem;
      }
   }
   
-  /* Large Desktop */
   @media (min-width: 1200px) {
-      /* Add large desktop-specific styles here */
   }

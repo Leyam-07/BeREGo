@@ -1,12 +1,8 @@
-/* BeReGo/css/layout.css */
-
-/* General container padding */
 .main-container {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
   
-  /* Section spacing */
   section {
     padding: 3rem 0;
   }
@@ -15,4 +11,3 @@
     background-color: var(--light-color);
   }
   
-  /* Add more layout-specific rules as needed */

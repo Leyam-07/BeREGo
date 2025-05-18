@@ -1,73 +1,72 @@
-        /* Checkout Progress Indicator */
-        .checkout-progress {
-            display: flex;
-            justify-content: space-between;
-            list-style: none;
-            padding: 0;
-            margin-bottom: 2rem;
-            position: relative;
-            counter-reset: step;
-        }
-        .checkout-progress::before { /* Connector line */
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 5%; /* Adjust start */
-            width: 90%; /* Adjust width */
-            height: 2px;
-            background-color: #dee2e6;
-            transform: translateY(-50%);
-            z-index: 1;
-        }
-        .checkout-progress li {
-            flex: 1;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-        .checkout-progress li::before { /* Step circle */
-            content: counter(step);
-            counter-increment: step;
-            width: 30px;
-            height: 30px;
-            line-height: 28px;
-            display: block;
-            font-size: 0.9rem;
-            color: var(--secondary-color);
-            background-color: white;
-            border-radius: 50%;
-            border: 2px solid #dee2e6;
-            margin: 0 auto 10px auto;
-        }
-        .checkout-progress li.active::before {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            color: white;
-        }
-        .checkout-progress li.active ~ li::before { /* Future steps */
-             background-color: white;
-             border-color: #dee2e6;
-             color: var(--secondary-color);
-        }
-         .checkout-progress li.active ~ li {
-             color: var(--secondary-color);
-         }
-        .checkout-progress li span {
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--secondary-color);
-            display: block;
-        }
-         .checkout-progress li.active span {
-             color: var(--primary-color);
-         }
+.checkout-progress {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    position: relative;
+    counter-reset: step;
+}
+.checkout-progress::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background-color: #dee2e6;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.checkout-progress li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.checkout-progress li::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    display: block;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #dee2e6;
+    margin: 0 auto 10px auto;
+}
+.checkout-progress li.active::before {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+.checkout-progress li.active ~ li::before {
+     background-color: white;
+     border-color: #dee2e6;
+     color: var(--secondary-color);
+}
+ .checkout-progress li.active ~ li {
+     color: var(--secondary-color);
+}
+.checkout-progress li span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    display: block;
+}
+ .checkout-progress li.active span {
+     color: var(--primary-color);
+}
 
-        .order-summary-checkout {
-             background-color: var(--light-color);
-            padding: 1.5rem;
-            border-radius: 0.375rem; /* Bootstrap default */
-            border: 1px solid #dee2e6;
-        }
-        .order-summary-checkout img {
-            max-width: 50px;
-        }
+.order-summary-checkout {
+     background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid #dee2e6;
+}
+.order-summary-checkout img {
+    max-width: 50px;
+}

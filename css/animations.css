@@ -1,11 +1,7 @@
-/* BeReGo/css/animations.css */
-
-/* General Transitions */
 a, button, .btn, .form-control, .form-select, .card, .nav-link, .dropdown-item {
     transition: all 0.2s ease-in-out;
 }
 
-/* Button Hover Effects */
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -15,19 +11,15 @@ a, button, .btn, .form-control, .form-select, .card, .nav-link, .dropdown-item {
     box-shadow: none;
 }
 
-/* Card Hover Effect (Enhance existing product card hover) */
 .product-card:hover, .category-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--bs-box-shadow-lg); /* Use Bootstrap's shadow variable */
+    box-shadow: var(--bs-box-shadow-lg);
 }
 
-/* Link Hover */
 a:hover {
-   /* text-decoration: underline;  -- Already in main.css */
    opacity: 0.8;
 }
 
-/* Fade-in (Example - apply class via JS or directly for simple cases) */
 .fade-in {
     animation: fadeInAnimation 0.5s ease-in forwards;
     opacity: 0;
@@ -37,5 +29,3 @@ a:hover {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-/* Add more specific animations or transitions as needed */

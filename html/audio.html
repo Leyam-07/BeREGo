@@ -4,41 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Products - BeReGo</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/product.css">
-    <link rel="stylesheet" href="../css/forms.css"> <!-- Keep forms.css for filters -->
+    <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <!-- Phase 3 CSS -->
     <link rel="stylesheet" href="../css/utilities.css">
     <link rel="stylesheet" href="../css/animations.css">
 </head>
 <body>
 
-    <!-- Header (Updated according to linking snippets) -->
     <header class="site-header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo">
+                    <img src="../assets/logo.png" alt="BeReGo Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Main Navigation Links -->
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <!-- Added 'active' class because category page is under Products -->
                             <a class="nav-link active" aria-current="page" href="products.html">Products</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -48,7 +41,6 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
                                 <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
-                                <!-- Added 'active' class for the current page -->
                                 <li><a class="dropdown-item active" href="audio.html">Audio</a></li>
                                 <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
                                 <li><a class="dropdown-item" href="smart-home.html">Smart Home</a></li>
@@ -68,17 +60,13 @@
                         </li>
                     </ul>
 
-                    <!-- Search Form -->
                     <form class="d-flex me-3" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search audio products..." aria-label="Search">
                         <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
                     </form>
 
-                    <!-- Header Action Icons -->
                     <div class="header-actions d-flex align-items-center">
-                        <!-- Updated href for user account -->
                         <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a>
-                        <!-- Updated href for cart -->
                         <a href="cart.html" class="nav-link" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </div>
@@ -86,10 +74,8 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="main-container">
         <div class="container">
-             <!-- Breadcrumbs (Links Verified) -->
             <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -101,7 +87,6 @@
             <h1 class="mb-4">Audio Products</h1>
 
             <div class="row">
-                <!-- Filters Sidebar (Content remains specific to Audio) -->
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <div class="accordion" id="filterAccordion">
                         <div class="accordion-item">
@@ -112,7 +97,6 @@
                           </h2>
                           <div id="collapseFilters" class="accordion-collapse collapse show" data-bs-parent="#filterAccordion">
                             <div class="accordion-body">
-                                <!-- Filter Group 1: Category -->
                                 <h5>Category</h5>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="cat1" checked disabled>
@@ -131,7 +115,6 @@
                                     <label class="form-check-label" for="subcat3">Speakers</label>
                                 </div>
                                 <hr>
-                                <!-- Filter Group 2: Brand -->
                                 <h5>Brand</h5>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="brand1">
@@ -154,12 +137,10 @@
                                     <label class="form-check-label" for="brand5">JBL</label>
                                 </div>
                                 <hr>
-                                <!-- Filter Group 3: Price Range -->
                                 <h5>Price Range</h5>
                                 <label for="priceRange" class="form-label">Max Price: <span id="priceValue">₱3000</span></label>
                                 <input type="range" class="form-range" min="300" max="10000" step="100" id="priceRange" value="3000" oninput="document.getElementById('priceValue').textContent = '₱' + this.value;">
                                 <hr>
-                                <!-- Filter Group 4: Features -->
                                 <h5>Features</h5>
                                  <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="feat1">
@@ -182,9 +163,7 @@
                       </div>
                 </div>
 
-                <!-- Product Grid (Updated View Details links) -->
                 <div class="col-lg-9">
-                    <!-- Sorting Dropdown -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted small">Showing 1-9 of 32 results</span>
                         <select class="form-select form-select-sm w-auto" aria-label="Sort products">
@@ -195,52 +174,45 @@
                         </select>
                     </div>
 
-                    <!-- Product Cards Row (Audio Examples) -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                        <!-- Audio Product Card 1 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/ffc107/black?text=Star+Buds" class="card-img-top" alt="Starmobile Earbuds Z">
+                                <img src="../assets/sm earbuds.jpg" class="card-img-top" alt="Starmobile Earbuds Z">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Starmobile Earbuds Z</h5>
                                     <p class="card-text small text-muted">True Wireless Sound, Long Battery</p>
                                     <p class="card-text fw-bold mt-auto">₱1,299</p>
-                                    <!-- Updated href -->
+                                    
                                     <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
                                 </div>
                             </div>
                         </div>
-                         <!-- Audio Product Card 2 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/6c757d/white?text=CDR+Speaker" class="card-img-top" alt="CD-R King Bluetooth Speaker">
+                                <img src="../assets/cdrk speaker.jpg" class="card-img-top" alt="CD-R King Bluetooth Speaker">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">CD-R King BT Speaker</h5>
                                     <p class="card-text small text-muted">Portable, FM Radio, USB/SD Card</p>
                                     <p class="card-text fw-bold mt-auto">₱580</p>
-                                     <!-- Updated href -->
+                                     
                                     <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
                                 </div>
                             </div>
                         </div>
-                         <!-- Audio Product Card 3 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/fd7e14/white?text=Xiaomi+Buds" class="card-img-top" alt="Xiaomi Mi True Wireless Earbuds Basic">
+                                <img src="../assets/xiaomi basic 2.jpg" class="card-img-top" alt="Xiaomi Mi True Wireless Earbuds Basic">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Xiaomi Mi TWS Earbuds Basic 2</h5>
                                     <p class="card-text small text-muted">Lightweight, Bluetooth 5.0</p>
                                     <p class="card-text fw-bold mt-auto">₱990</p>
-                                     <!-- Updated href -->
                                     <a href="product-detail.html" class="btn btn-outline-primary btn-sm stretched-link">View Details</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- ... (Repeat for other product cards, ensuring the href="product-detail.html" is correct) ... -->
-                         <!-- Audio Product Card 4 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/d63384/white?text=Realme+Buds" class="card-img-top" alt="Realme Buds Air">
+                                <img src="../assets/realme earbuds.jpg" class="card-img-top" alt="Realme Buds Air">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Realme Buds Air 3 Neo</h5>
                                     <p class="card-text small text-muted">AI ENC Noise Cancellation, IPX5</p>
@@ -249,10 +221,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Audio Product Card 5 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/0d6efd/white?text=JBL+Go" class="card-img-top" alt="JBL Go 3 Speaker">
+                                <img src="../assets/jbl go 3.jpeg" class="card-img-top" alt="JBL Go 3 Speaker">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">JBL Go 3</h5>
                                     <p class="card-text small text-muted">Ultra-Portable, Waterproof</p>
@@ -261,10 +232,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Audio Product Card 6 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/ffc107/black?text=Star+HP" class="card-img-top" alt="Starmobile Wired Headphones">
+                                <img src="../assets/sm headphone.png" class="card-img-top" alt="Starmobile Wired Headphones">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Starmobile Basic Headphones</h5>
                                     <p class="card-text small text-muted">Wired, On-Ear Design, Mic</p>
@@ -273,10 +243,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Audio Product Card 7 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/6c757d/white?text=CDR+Earphone" class="card-img-top" alt="CD-R King Wired Earphones">
+                                <img src="../assets/cdrk earphones.jpg" class="card-img-top" alt="CD-R King Wired Earphones">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">CD-R King Basic Earphones</h5>
                                     <p class="card-text small text-muted">Wired, In-Ear, Budget Option</p>
@@ -285,10 +254,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Audio Product Card 8 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/fd7e14/white?text=Xiaomi+Speaker" class="card-img-top" alt="Xiaomi Mi Portable Bluetooth Speaker">
+                                <img src="../assets/xiaomi bt speaker.jpeg" class="card-img-top" alt="Xiaomi Mi Portable Bluetooth Speaker">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Xiaomi Mi Portable BT Speaker</h5>
                                     <p class="card-text small text-muted">16W Output, Water Resistant</p>
@@ -297,10 +265,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Audio Product Card 9 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/d63384/white?text=Realme+Buds+Q" class="card-img-top" alt="Realme Buds Q2s">
+                                <img src="../assets/Realme-Buds-Q2s-3.jpg" class="card-img-top" alt="Realme Buds Q2s">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Realme Buds Q2s</h5>
                                     <p class="card-text small text-muted">Dolby Atmos Support, Gaming Mode</p>
@@ -309,9 +276,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- End Product Row -->
+                    </div>
 
-                    <!-- Pagination -->
                     <nav aria-label="Page navigation" class="mt-5 d-flex justify-content-center">
                         <ul class="pagination">
                             <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
@@ -323,21 +289,18 @@
                         </ul>
                     </nav>
 
-                </div> <!-- End Product Grid Column -->
-            </div> <!-- End Row -->
+                </div>
+            </div>
         </div>
     </main>
 
-    <!-- Footer (Updated according to linking snippets) -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <!-- Footer Column 1: Brand -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5>BeReGo</h5>
                     <p class="text-muted small">Your gateway to Southeast Asian electronics. Quality products, trusted service.</p>
                 </div>
-                <!-- Footer Column 2: Quick Links -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
@@ -348,23 +311,18 @@
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
-                <!-- Footer Column 3: Account -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5>Account</h5>
                      <ul class="list-unstyled">
                         <li><a href="user-account.html">My Account</a></li>
-                        <!-- Example link to specific tab -->
                         <li><a href="user-account.html#v-pills-orders">Order History</a></li>
-                        <li><a href="#">Track Order</a></li> <!-- Placeholder -->
-                         <!-- Example link to specific tab -->
+                        <li><a href="#">Track Order</a></li>
                         <li><a href="user-account.html#v-pills-wishlist">Wishlist</a></li>
                     </ul>
                 </div>
-                 <!-- Footer Column 4: Connect/Legal -->
                  <div class="col-lg-3 col-md-6">
                     <h5>Connect</h5>
                      <ul class="list-unstyled mb-2">
-                        <!-- Updated legal links -->
                         <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
@@ -377,12 +335,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                © <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.
+                © <span id="current-year"></span> BeReGo. All Rights Reserved.
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>

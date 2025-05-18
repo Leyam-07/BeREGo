@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Gear - BeReGo</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/navigation.css">
@@ -20,24 +17,21 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="site-header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo">
+                    <img src="../assets/logo.png" alt="BeReGo Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Main Navigation Links -->
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <!-- Active because it's a product-related page -->
                             <a class="nav-link active" aria-current="page" href="products.html">Products</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -53,7 +47,6 @@
                                 <li><a class="dropdown-item" href="wearables.html">Wearables</a></li>
                                 <li><a class="dropdown-item" href="cameras.html">Cameras</a></li>
                                 <li><a class="dropdown-item" href="computers.html">Computers</a></li>
-                                <!-- Active because this is the gaming page -->
                                 <li><a class="dropdown-item active" href="gaming.html">Gaming</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="products.html">All Products</a></li>
@@ -67,13 +60,11 @@
                         </li>
                     </ul>
 
-                    <!-- Search Form -->
                     <form class="d-flex me-3" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search gaming gear..." aria-label="Search">
                         <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
                     </form>
 
-                    <!-- Header Action Icons -->
                     <div class="header-actions d-flex align-items-center">
                         <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a>
                         <a href="cart.html" class="nav-link" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
@@ -83,10 +74,8 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="main-container">
         <div class="container">
-             <!-- Breadcrumbs -->
             <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -98,7 +87,6 @@
             <h1 class="mb-4">Gaming Gear</h1>
 
             <div class="row">
-                <!-- Filters Sidebar -->
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <div class="accordion" id="filterAccordion">
                         <div class="accordion-item">
@@ -109,13 +97,11 @@
                           </h2>
                           <div id="collapseFilters" class="accordion-collapse collapse show" data-bs-parent="#filterAccordion">
                             <div class="accordion-body">
-                                <!-- Filter Group 1: Category -->
                                 <h5>Category</h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="catGaming" checked disabled> <!-- Checked and disabled -->
+                                    <input class="form-check-input" type="checkbox" value="" id="catGaming" checked disabled>
                                     <label class="form-check-label fw-bold" for="catGaming">Gaming</label>
                                 </div>
-                                <!-- Sub-categories -->
                                 <div class="ms-3 mt-1">
                                      <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="subcat1">
@@ -139,7 +125,6 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <!-- Filter Group 2: Brand -->
                                 <h5>Brand</h5>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="brandRakk">
@@ -157,14 +142,11 @@
                                     <input class="form-check-input" type="checkbox" value="" id="brandHyperX">
                                     <label class="form-check-label" for="brandHyperX">HyperX</label>
                                 </div>
-                                <!-- Add more brands -->
                                 <hr>
-                                <!-- Filter Group 3: Price Range -->
                                 <h5>Price Range</h5>
                                 <label for="priceRange" class="form-label">Max Price: <span id="priceValue">₱10000</span></label>
                                 <input type="range" class="form-range" min="500" max="50000" step="250" id="priceRange" value="10000" oninput="document.getElementById('priceValue').textContent = '₱' + this.value;">
                                 <hr>
-                                <!-- Add more filters like Connectivity (Wired/Wireless), Features (RGB) etc. -->
                                 <div class="d-grid mt-3">
                                      <button class="btn btn-primary btn-sm">Apply Filters</button>
                                 </div>
@@ -174,11 +156,9 @@
                       </div>
                 </div>
 
-                <!-- Product Grid -->
                 <div class="col-lg-9">
-                    <!-- Sorting Dropdown -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-muted small">Showing 1-6 of 18 results</span> <!-- Example count -->
+                        <span class="text-muted small">Showing 1-6 of 18 results</span>
                         <select class="form-select form-select-sm w-auto" aria-label="Sort products">
                             <option selected>Sort by: Featured</option>
                             <option value="1">Price: Low to High</option>
@@ -187,12 +167,10 @@
                         </select>
                     </div>
 
-                    <!-- Product Cards Row -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                        <!-- Gaming Product Card 1 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/dc3545/white?text=Rakk+Keyboard" class="card-img-top" alt="Rakk Gaming Keyboard">
+                                <img src="../assets/rakk keyboard.jpg" class="card-img-top" alt="Rakk Gaming Keyboard">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Rakk Lam-Ang Pro</h5>
                                     <p class="card-text small text-muted">Mechanical Keyboard, RGB</p>
@@ -201,10 +179,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Gaming Product Card 2 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/0d6efd/white?text=Fantech+Mouse" class="card-img-top" alt="Fantech Gaming Mouse">
+                                <img src="../assets/fantech.jpg" class="card-img-top" alt="Fantech Gaming Mouse">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Fantech Helios XD3</h5>
                                     <p class="card-text small text-muted">Wireless Gaming Mouse, Lightweight</p>
@@ -213,10 +190,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Gaming Product Card 3 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/198754/white?text=Gaming+Headset" class="card-img-top" alt="Gaming Headset">
+                                <img src="../assets/brand g headset.jpeg" class="card-img-top" alt="Gaming Headset">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Brand G Headset Alpha</h5>
                                     <p class="card-text small text-muted">7.1 Surround Sound, Detachable Mic</p>
@@ -225,10 +201,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Gaming Product Card 4 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/ffc107/black?text=Gaming+Laptop" class="card-img-top" alt="Gaming Laptop">
+                                <img src="../assets/legion.jpg" class="card-img-top" alt="Gaming Laptop">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Legion GX Gaming Laptop</h5>
                                     <p class="card-text small text-muted">RTX 3050, 16GB RAM, 144Hz</p>
@@ -237,10 +212,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Gaming Product Card 5 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/6f42c1/white?text=Controller" class="card-img-top" alt="Game Controller">
+                                <img src="../assets/easysmx.jpeg" class="card-img-top" alt="Game Controller">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">EasySMX Wireless Controller</h5>
                                     <p class="card-text small text-muted">PC/Android Compatible</p>
@@ -249,10 +223,9 @@
                                 </div>
                             </div>
                         </div>
-                         <!-- Gaming Product Card 6 -->
                         <div class="col">
                             <div class="card h-100 product-card">
-                                <img src="https://placehold.co/300x200/20c997/white?text=Mousepad" class="card-img-top" alt="Gaming Mousepad">
+                                <img src="../assets/gaming mousepad.jpg" class="card-img-top" alt="Gaming Mousepad">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">XL Gaming Mousepad</h5>
                                     <p class="card-text small text-muted">Extended Size, Stitched Edges</p>
@@ -262,34 +235,29 @@
                             </div>
                         </div>
 
-                    </div> <!-- End Product Row -->
+                    </div>
 
-                    <!-- Pagination -->
                     <nav aria-label="Page navigation" class="mt-5 d-flex justify-content-center">
                         <ul class="pagination">
                             <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
                             <li class="page-item"><a class="page-link" href="#">Next</a></li>
                         </ul>
                     </nav>
 
-                </div> <!-- End Product Grid Column -->
-            </div> <!-- End Row -->
+                </div>
+            </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <!-- Footer Column 1: Brand Info -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5>BeReGo</h5>
                     <p class="text-muted small">Your gateway to Southeast Asian electronics. Quality products, trusted service.</p>
                 </div>
-                <!-- Footer Column 2: Quick Links -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
@@ -300,17 +268,15 @@
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
-                <!-- Footer Column 3: Account Links -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5>Account</h5>
                      <ul class="list-unstyled">
                         <li><a href="user-account.html">My Account</a></li>
                         <li><a href="user-account.html#v-pills-orders">Order History</a></li>
-                        <li><a href="#">Track Order</a></li> <!-- Placeholder -->
+                        <li><a href="#">Track Order</a></li>
                         <li><a href="user-account.html#v-pills-wishlist">Wishlist</a></li>
                     </ul>
                 </div>
-                 <!-- Footer Column 4: Connect/Legal -->
                  <div class="col-lg-3 col-md-6">
                     <h5>Connect</h5>
                      <ul class="list-unstyled mb-2">
@@ -325,16 +291,13 @@
                     </div>
                 </div>
             </div>
-            <!-- Footer Bottom: Copyright -->
             <div class="footer-bottom">
-                © <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.
+                © <span id="current-year"></span> BeReGo. All Rights Reserved.
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- Simple script for current year -->
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

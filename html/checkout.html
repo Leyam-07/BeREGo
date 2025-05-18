@@ -4,49 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - BeReGo</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/product.css">
-    <link rel="stylesheet" href="../css/forms.css"> <!-- Included -->
+    <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/utilities.css"> <!-- Included -->
-    <link rel="stylesheet" href="../css/animations.css"> <!-- Included -->
-    <link rel="stylesheet" href="../css/checkout.css"> <!-- Included -->
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/checkout.css">
 </head>
 <body>
 
-    <!-- Header (Standard Site Header - Copied Structure, hrefs NOT updated per exclusion) -->
     <header class="site-header sticky-top">
          <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html"> <!-- Kept href -->
-                    <img src="../assets/images/berego-logo-placeholder.png" alt="BeReGo Logo">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/logo.png" alt="BeReGo Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Main Navigation Links -->
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a> <!-- Kept href -->
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <!-- Mark Products as active on checkout -->
-                            <a class="nav-link active" href="products.html">Products</a> <!-- Kept href -->
+                            <a class="nav-link active" href="products.html">Products</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categories
                             </a>
                             <ul class="dropdown-menu">
-                                <!-- Kept hrefs -->
                                 <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
                                 <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
                                 <li><a class="dropdown-item" href="audio.html">Audio</a></li>
@@ -61,36 +54,31 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a> <!-- Kept href -->
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a> <!-- Kept href -->
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
 
-                    <!-- Search Form -->
                     <form class="d-flex me-3" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
                         <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
                     </form>
 
-                    <!-- Header Action Icons -->
                     <div class="header-actions d-flex align-items-center">
-                        <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a> <!-- Kept href -->
-                        <!-- Mark Cart as active on checkout -->
-                        <a href="cart.html" class="nav-link active" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a> <!-- Kept href -->
+                        <a href="user-account.html" class="nav-link" aria-label="User Account"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="nav-link active" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="main-container">
         <div class="container">
             <h1 class="text-center mb-4">Checkout</h1>
 
-            <!-- Progress Indicator -->
             <ul class="checkout-progress">
                 <li class="active"><span>Shipping</span></li>
                 <li><span>Payment</span></li>
@@ -98,11 +86,9 @@
             </ul>
 
             <div class="row g-5">
-                <!-- Checkout Forms (Accordion Example) -->
                 <div class="col-lg-7">
                     <div class="accordion" id="checkoutAccordion">
 
-                        <!-- Step 1: Shipping Address -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -111,9 +97,7 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#checkoutAccordion">
                                 <div class="accordion-body">
-                                    <!-- Using needs-validation for Bootstrap's JS handling -->
                                     <form class="row g-3 needs-validation" novalidate>
-                                        <!-- Shipping form content remains the same -->
                                         <div class="col-md-6">
                                             <label for="firstName" class="form-label">First name</label>
                                             <input type="text" class="form-control" id="firstName" value="Juan" required>
@@ -167,7 +151,6 @@
                                             <label class="form-check-label" for="save-info">Save this information for next time</label>
                                         </div>
                                         <div class="d-grid mt-3">
-                                             <!-- Button triggers JS logic to validate and open next step -->
                                              <button class="btn btn-primary btn-continue" type="button" data-bs-target="#collapseTwo">Continue to Payment</button>
                                         </div>
                                     </form>
@@ -175,7 +158,6 @@
                             </div>
                         </div>
 
-                        <!-- Step 2: Payment Method -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -184,9 +166,7 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#checkoutAccordion">
                                 <div class="accordion-body">
-                                     <!-- Using needs-validation for Bootstrap's JS handling -->
                                     <form class="needs-validation" novalidate>
-                                        <!-- Payment form content remains the same -->
                                         <h4 class="mb-3">Payment</h4>
                                         <div class="my-3">
                                             <div class="form-check">
@@ -230,7 +210,6 @@
                                             </div>
                                         </div>
                                          <div class="d-grid mt-4">
-                                            <!-- Button triggers JS logic to validate and open next step -->
                                             <button class="btn btn-primary btn-continue" type="button" data-bs-target="#collapseThree">Continue to Review</button>
                                         </div>
                                     </form>
@@ -238,7 +217,6 @@
                             </div>
                         </div>
 
-                        <!-- Step 3: Review Order -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -247,26 +225,21 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#checkoutAccordion">
                                 <div class="accordion-body">
-                                    <!-- Using needs-validation for Bootstrap's JS handling -->
                                     <form class="needs-validation" novalidate>
-                                        <!-- Review Order content -->
                                         <h4 class="mb-3">Review Your Order</h4>
                                         <div class="mb-3">
                                             <strong>Shipping To:</strong><br>
                                             Juan Dela Cruz<br>
                                             1234 Main St, Manila, NCR 1600
-                                            <!-- Updated JS to open specific accordion item -->
                                             <a href="#" class="small ms-2" onclick="event.preventDefault(); bootstrap.Collapse.getOrCreateInstance(document.getElementById('collapseOne')).show();">Change</a>
                                         </div>
                                          <div class="mb-3">
                                             <strong>Payment Method:</strong><br>
                                             Credit Card ending in xxxx
-                                            <!-- Updated JS to open specific accordion item -->
                                             <a href="#" class="small ms-2" onclick="event.preventDefault(); bootstrap.Collapse.getOrCreateInstance(document.getElementById('collapseTwo')).show();">Change</a>
                                         </div>
                                         <hr>
                                         <ul class="list-group list-group-flush mb-3">
-                                            <!-- List items remain the same -->
                                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                                 <div><h6 class="my-0">MyPhone Model X (x1)</h6></div>
                                                 <span class="text-muted">₱5,999</span>
@@ -288,10 +261,8 @@
                                              <li class="list-group-item d-flex justify-content-between"><span>Total (PHP)</span><strong>₱9,527</strong></li>
                                         </ul>
                                         <div class="d-grid">
-                                            <!-- Submit button for the form -->
                                             <button class="btn btn-primary btn-lg" type="submit">Place Order</button>
                                         </div>
-                                        <!-- Updated links to terms.html and privacy.html, target="_blank" added -->
                                         <p class="small text-muted mt-3 text-center">By placing your order, you agree to BeReGo's <a href="terms.html" target="_blank">Terms & Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.</p>
                                     </form>
                                 </div>
@@ -300,9 +271,7 @@
                     </div>
                 </div>
 
-                <!-- Order Summary Sidebar -->
                 <div class="col-lg-5">
-                    <!-- Order Summary content remains the same -->
                      <div class="order-summary-checkout">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                             <span class="text-primary">Your cart</span>
@@ -311,21 +280,21 @@
                         <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div class="d-flex align-items-center">
-                                     <img src="https://placehold.co/100x100/adb5bd/white?text=P1" alt="Product 1" class="me-2 rounded">
+                                     <img src="../assets/my phone.png" alt="Product 1" class="me-2 rounded">
                                     <div><h6 class="my-0">MyPhone Model X</h6><small class="text-muted">Qty: 1</small></div>
                                 </div>
                                 <span class="text-muted">₱5,999</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div class="d-flex align-items-center">
-                                     <img src="https://placehold.co/100x100/adb5bd/white?text=P3" alt="Product 3" class="me-2 rounded">
+                                     <img src="../assets/sm earbuds.jpg" alt="Product 3" class="me-2 rounded">
                                     <div><h6 class="my-0">Starmobile Earbuds Z</h6><small class="text-muted">Qty: 2</small></div>
                                 </div>
                                 <span class="text-muted">₱2,598</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div class="d-flex align-items-center">
-                                     <img src="https://placehold.co/100x100/adb5bd/white?text=P4" alt="Product 4" class="me-2 rounded">
+                                     <img src="../assets/cdrk powerbank.png" alt="Product 4" class="me-2 rounded">
                                     <div><h6 class="my-0">CD-R King Powerbank</h6><small class="text-muted">Qty: 1</small></div>
                                 </div>
                                 <span class="text-muted">₱780</span>
@@ -347,7 +316,6 @@
         </div>
     </main>
 
-    <!-- Footer (Standard Site Footer - Copied Structure, hrefs NOT updated per exclusion) -->
      <footer class="site-footer">
         <div class="container">
              <div class="row">
@@ -358,7 +326,6 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <!-- Kept hrefs -->
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -369,7 +336,6 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5>Account</h5>
                      <ul class="list-unstyled">
-                         <!-- Kept hrefs -->
                         <li><a href="user-account.html">My Account</a></li>
                         <li><a href="user-account.html#v-pills-orders">Order History</a></li>
                         <li><a href="#">Track Order</a></li>
@@ -379,12 +345,10 @@
                  <div class="col-lg-3 col-md-6">
                     <h5>Connect</h5>
                      <ul class="list-unstyled mb-2">
-                         <!-- Kept hrefs -->
                         <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                     <div class="social-icons">
-                        <!-- Kept hrefs -->
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -393,46 +357,35 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                © <span id="current-year"></span> BeReGo. All Rights Reserved. Designed for demonstration.
+                © <span id="current-year"></span> BeReGo. All Rights Reserved.
             </div>
         </div>
     </footer>
 
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        // And basic accordion step progression logic
         (function () {
           'use strict'
 
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
           var forms = document.querySelectorAll('.needs-validation');
 
-          // --- Form Submission Handling ---
-          // We only really care about the final submit button click for the demo alert
           const placeOrderForm = document.querySelector('#collapseThree form');
           if(placeOrderForm) {
               placeOrderForm.addEventListener('submit', function(event) {
-                  event.preventDefault(); // Always prevent actual submission
+                  event.preventDefault();
                   event.stopPropagation();
 
                   if (!placeOrderForm.checkValidity()) {
-                      // Handle invalid form if needed (Bootstrap does visually)
                   } else {
-                      // Handle valid form: Show demo success message
-                      alert('Order Placed! (Demo only - no actual order processed)');
-                      // Optional: Redirect after successful "placement"
-                      // window.location.href = 'index.html';
+                      alert('Order Placed!');
                   }
                   placeOrderForm.classList.add('was-validated');
               }, false);
           }
 
-          // --- Accordion Step Activation & Navigation Logic ---
           const checkoutAccordion = document.getElementById('checkoutAccordion');
           const progressSteps = document.querySelectorAll('.checkout-progress li');
 
@@ -441,11 +394,10 @@
 
               accordionItems.forEach((item, index) => {
                   const collapseElement = item.querySelector('.accordion-collapse');
-                  const button = item.querySelector('.accordion-button'); // The header button
-                  const stepBadge = button.querySelector('.badge'); // The number badge
+                  const button = item.querySelector('.accordion-button');
+                  const stepBadge = button.querySelector('.badge');
 
                   if (collapseElement) {
-                      // Update progress bar and badge when a step is shown
                       collapseElement.addEventListener('show.bs.collapse', () => {
                           progressSteps.forEach((step, stepIndex) => {
                               step.classList.toggle('active', stepIndex <= index);
@@ -456,26 +408,21 @@
                           }
                       });
 
-                      // Optional: Revert badge style when hidden if desired
-                      // collapseElement.addEventListener('hide.bs.collapse', () => { ... });
                   }
               });
 
-              // Add logic to "Continue" buttons within each step's body
               const continueButtons = checkoutAccordion.querySelectorAll('.btn-continue');
               continueButtons.forEach(btn => {
                   btn.addEventListener('click', () => {
                       const currentForm = btn.closest('.accordion-body').querySelector('form');
-                      const targetId = btn.getAttribute('data-bs-target'); // e.g., #collapseTwo
+                      const targetId = btn.getAttribute('data-bs-target');
                       const targetCollapseElement = document.querySelector(targetId);
 
-                      // 1. Validate the current step's form
                       if (currentForm && !currentForm.checkValidity()) {
-                          currentForm.classList.add('was-validated'); // Show validation errors
-                          return; // Stop if form is invalid
+                          currentForm.classList.add('was-validated');
+                          return;
                       }
 
-                      // 2. If valid, show the next step's collapse element
                       if (targetCollapseElement) {
                           const bsCollapse = bootstrap.Collapse.getOrCreateInstance(targetCollapseElement);
                           bsCollapse.show();
